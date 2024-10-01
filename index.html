@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comisiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h1>Calculadora Comisiones</h1>
+            <!-- Logo debajo del título -->
+            <img src="logo.png" alt="Logo Bamesa" class="logo-debajo-titulo">
+            
+            <div class="form-group">
+                <label for="tipoDeProducto">Tipo de Producto:</label>
+                <select id="tipoDeProducto">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="36">36</option>
+                </select> Meses
+            </div>
+            <div class="form-group">
+                <label for="consumo">Consumo kWh:</label>
+                <input type="text" id="consumo" placeholder="0"> kWh
+            </div>
+            <div class="form-group">
+                <label for="feeEnergia">Fee Energía €/MWh:</label>
+                <input type="text" id="feeEnergia" placeholder="0"> €/MWh
+            </div>
+            <div class="form-group">
+                <label for="sumatoriaPotencias">Sumatorio Potencias:</label>
+                <input type="text" id="sumatoriaPotencias" placeholder="0"> kW
+            </div>
+            <div class="form-group">
+                <label for="feePotencia">Fee Potencia €/kW/AÑO:</label>
+                <input type="text" id="feePotencia" placeholder="0"> €/kW/año
+            </div>
+            
+            <!-- Aquí es donde se muestra el resultado -->
+            <div class="result">
+                <h2>COMISIÓN</h2>
+                <h3 id="result">0,00 €</h3>
+                <p>*Comisión orientativa, queda sujeta a verificación de datos en el momento de la contratación.</p>
+            </div>
+        
+            <!-- Botón para calcular y logos al lado -->
+            <div class="buttons-and-logos">
+                <!-- Logo izquierdo -->
+                <img src="Logo Bamesa Consulting.png" alt="Bamesa Consulting" class="logo-izquierdo">
+                
+                <!-- Botón de calcular -->
+                <button onclick="calcularComision()">Calcular Comisión</button>
+        
+                <!-- Logo derecho -->
+                <img src="Logo Bamesa Consulting.png" alt="Bamesa Consulting" class="logo-derecho">
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
